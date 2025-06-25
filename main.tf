@@ -10,4 +10,8 @@ resource "digitalocean_droplet" "ubuntu" {
   name   = var.instance_name
   region = var.region
   size   = var.instance_size
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
