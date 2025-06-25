@@ -2,17 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 variable "region" {
-  description = "AWS region"
-  default     = "us-west-1"
+  description = "DO region"
+  default     = "lon1"
 }
 
-variable "instance_type" {
-  description = "Type of EC2 instance to provision"
-  default     = "t2.micro"
+variable "instance_size" {
+  description = "Type of DO droplet to provision"
+  default     = "s-1vcpu-1gp"
 }
 
 variable "instance_name" {
-  description = "EC2 instance name"
+  description = "DO droplet name"
   default     = "Provisioned by Terraform"
 }
 

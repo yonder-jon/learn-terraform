@@ -4,7 +4,7 @@
 terraform {
 
   cloud {
-    organization = "organization-name"
+    organization = "tutorial-org-yonder-jon"
 
     workspaces {
       name = "learn-terraform"
@@ -12,9 +12,9 @@ terraform {
   }
 
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.31.0"
+    digitalocean = {
+      source = "digitalocean/digitalocean",
+      version = "~> 2.0"
     }
   }
 
