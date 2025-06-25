@@ -1,1 +1,1 @@
-instance_size = "s-1vcpu-2gb"
+instance_size = "s-1vcpu-1gb"
