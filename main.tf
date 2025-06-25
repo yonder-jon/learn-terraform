@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 provider "digitalocean" {
-
+  token = var.DO_PAT
 }
 
 resource "digitalocean_droplet" "ubuntu" {
