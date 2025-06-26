@@ -1,0 +1,14 @@
+terraform {
+  required_providers {
+    digitalocean = {
+      source  = "digitalocean/digitalocean"
+      version = "~> 2.0"
+    }
+  }
+
+  required_version = "~> 1.2"
+}
+
+provider "digitalocean" {
+  token = var.DO_PAT
+}
