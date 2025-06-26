@@ -5,6 +5,10 @@ provider "digitalocean" {
   token = var.DO_PAT
 }
 
+module "networking" {
+  source = "./modules/network"
+}
+
 resource "digitalocean_droplet" "ubuntu" {
   image  = "ubuntu-24-04-x64"
   name   = var.instance_name
