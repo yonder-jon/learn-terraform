@@ -8,7 +8,8 @@ provider "digitalocean" {
 module "networking" {
   source = "./modules/network"
 
-  DO_PAT = var.DO_PAT
+  DO_PAT  = var.DO_PAT
+  root_ip = digitalocean_droplet.ubuntu.ipv4_address
 }
 
 resource "digitalocean_droplet" "ubuntu" {
