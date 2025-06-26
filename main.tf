@@ -7,6 +7,8 @@ provider "digitalocean" {
 
 module "networking" {
   source = "./modules/network"
+
+  DO_PAT = var.DO_PAT
 }
 
 resource "digitalocean_droplet" "ubuntu" {
